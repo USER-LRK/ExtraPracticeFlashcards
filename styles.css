@@ -1,0 +1,172 @@
+html {
+    font-family: "Noto-san", "Poppins", sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 90%;
+    height: 90%;
+    max-height: 600px;
+  }
+  
+  .top {
+    flex: 2 2 20%;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    
+  }
+  .card-container {
+    flex: 7 7 70%;
+    width: 100%;
+    position: relative;
+    perspective: 1000px;
+    margin: 10px 0px 10px 0px;
+  }
+  .controls{
+    flex: 1 1 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 24px;
+  }
+
+  select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  
+  .progress-bar-container {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    height: 12px;
+    margin-top: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    font-size: 32px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  .front {
+    background: linear-gradient(135deg, #3498db, #6dd5fa);
+    color: white;
+    text-align: center;
+  }
+  #character{
+    white-space: nowrap;
+    text-align: center;
+  }
+  .back {
+    background: linear-gradient(135deg, #2ecc71, #a8e063);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  #definition{
+    text-align: center;
+  }
+  ruby{
+    font-size: 50px;
+  }
+
+  .controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  #prevCard, #nextCard {
+    background: #3498db;
+    color: white;
+    flex: 1;
+  }
+  
+  #flipCard {
+    background: #f39c12;
+    color: white;
+    flex: 1;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="top">
+            <h1>Extra Practice: P3-P6</h1>
+            <div class="filters" >
+                <label for="levelSelect">小学级:</label>
+                <select id="levelSelect"></select>
+            
+                <label for="subLevelSelect">课次:</label>
+                <select id="subLevelSelect"></select>
+            </div>
+            
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card" id ="card">
+                <div class="front" >
+                    <div id="character">?</div>
+                </div>
+                <div class="back">
+                    <div id="char-grp"></div>
+                    <div id="definition">?</div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="prevCard">⬅ 前一个</button>
+            <button id="flipCard">🔄 翻</button>
+            <button id="nextCard">下一个 ➡</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
