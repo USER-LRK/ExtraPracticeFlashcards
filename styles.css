@@ -1,3 +1,4 @@
+
 html {
     font-family: "Noto-san", "Poppins", sans-serif;
     background: linear-gradient(135deg, #f6d365, #fda085);
@@ -41,12 +42,6 @@ html {
     position: relative;
     perspective: 1000px;
     margin: 10px 0px 10px 0px;
-  }
-  .controls{
-    flex: 1 1 10%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
   }
   
   h1 {
@@ -117,6 +112,7 @@ html {
     background: linear-gradient(135deg, #3498db, #6dd5fa);
     color: white;
     text-align: center;
+    font-weight: 600;
   }
   #character{
     white-space: nowrap;
@@ -126,19 +122,33 @@ html {
     background: linear-gradient(135deg, #2ecc71, #a8e063);
     color: white;
     transform: rotateY(180deg);
+    
   }
   #definition{
     text-align: center;
+    color: #f0f8ff;
+    word-wrap: break-word;
+    padding: 0 10px;
   }
+
   ruby{
     font-size: 50px;
   }
 
-  .controls {
+  .controls{
+    flex: 1 1 10%;
+    width: 100%;
     display: flex;
+    justify-content: center;
     gap: 10px;
   }
   
+  
+  #char-grp {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
   button {
     padding: 10px 15px;
     font-size: 16px;
